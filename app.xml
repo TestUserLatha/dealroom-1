@@ -18,7 +18,7 @@
     <ModulePrefs title="AI Deal Room"
                 author="Accenture"
            description="Deal Room App">
-        <Link rel="Icon" href="group-icon.png"></link>
+        <Link rel="Icon" href="group-icon.png"></Link>
         <Require feature="dynamic-height"></Require>
         <Require feature="jive-core-v3"></Require>
         <Require feature="jquery-1.4.2"></Require>
