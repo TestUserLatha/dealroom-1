@@ -18,13 +18,13 @@
     <ModulePrefs title="AI Deal Room"
                 author="Accenture"
            description="Deal Room App">
-        <Link rel="Icon" href="group-icon.png"/>
-        <Require feature="dynamic-height"/>
-        <Require feature="jive-core-v3"/>
-        <Require feature="jquery-1.4.2"/>
-        <Require feature="minimessage"/>
-        <Require feature="osapi"/>
-        <Require feature="views"/>
+        <Link rel="Icon" href="group-icon.png"></link>
+        <Require feature="dynamic-height"></Require>
+        <Require feature="jive-core-v3"></Require>
+        <Require feature="jquery-1.4.2"></Require>
+        <Require feature="minimessage"></Require>
+        <Require feature="osapi"></Require>
+        <Require feature="views"></Require>
     </ModulePrefs>
-    <Content view="home, canvas" type="html" href="dealroom.html" preferred_height="400"/>
+    <Content view="home, canvas" type="html" href="dealroom.html" preferred-height="400"></Require>
 </Module>
