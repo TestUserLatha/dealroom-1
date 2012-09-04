@@ -26,5 +26,5 @@
         <Require feature="osapi"></Require>
         <Require feature="views"></Require>
     </ModulePrefs>
-    <Content view="home, canvas" type="html" href="dealroom.html" preferred-height="400"></Require>
+    <Content view="home, canvas" type="html" href="dealroom.html" preferred-height="400"></Content>
 </Module>
