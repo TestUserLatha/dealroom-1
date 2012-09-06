@@ -152,6 +152,7 @@ function onDocFetch(response) {
 	type : "",
 	tags : [],
 	subject : "",
+	attachments:[],
 	content : {
 		text : "",
 		type : ""
@@ -162,6 +163,7 @@ function onDocFetch(response) {
 	
 	postDoc.type = group.type;
 	postDoc.tags = group.tags;
+    postDoc.attachments = group.attachments;
 	postDoc.subject = group.subject;
 	postDoc.content = group.content;
 	postDoc.question = group.question;
