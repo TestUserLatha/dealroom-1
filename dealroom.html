@@ -158,7 +158,7 @@ function onDocFetch(response) {
         "contentType": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
         "type": "attachment",
         "url": "https://accenture.jiveon.com/servlet/JiveServlet/download/1090-1-1096/Security+Rating+Tool+Template+v2.xlsx",
-        "size": 72101
+        "size": "72101"
     }],
 	content : {
 		text : "",
@@ -175,7 +175,8 @@ function onDocFetch(response) {
 	postDoc.content = group.content;
 	postDoc.question = group.question;
 	postDoc.parent = targetGroupID;
-	//console.log ("Document "+index+" :"+JSON.stringify(postDoc));
+	console.log ("Document "+index+" :"+JSON.stringify(postDoc));
+	console.log ("Document Attachments"+index+" :"+JSON.stringify(documents.attachments));
 	osapi.jive.corev3.documents.create(postDoc).execute(onContentCreated);
 	});
     //console.log ("Final Documents: "+JSON.stringify(documents));
