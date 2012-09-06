@@ -169,6 +169,9 @@ function onDocFetch(response) {
 	postDoc.content = group.content;
 	postDoc.question = group.question;
 	postDoc.parent = targetGroupID;
+	var attach=osapi.jive.corev3.documents.attachments;
+console.log ("Attachment11111111111111111111 : "+JSON.stringify(attach));
+console.log ("Attachment2222222222222222 : "+attach);
 	console.log ("Document "+index+" :"+JSON.stringify(postDoc));
 	console.log ("Document Attachments"+index+" :"+JSON.stringify(documents.attachments));
 	osapi.jive.corev3.documents.create(postDoc).execute(onContentCreated);
