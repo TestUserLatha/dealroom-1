@@ -144,7 +144,8 @@ function onDocFetch(response) {
         return;
     }
     var documents = response.list;
-	//console.log ("Documents: "+JSON.stringify(documents));
+	console.log ("Documents Attach1: "+JSON.stringify(response.attachments));
+	console.log ("Documents Attach2: "+response.attachments);
 	var postDoc;
 	
 	$.each(documents, function(index, group) {
