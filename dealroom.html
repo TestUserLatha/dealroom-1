@@ -152,7 +152,14 @@ function onDocFetch(response) {
 	type : "",
 	tags : [],
 	subject : "",
-	attachments:[],
+	attachments:[{
+        "id": "1096",
+        "name": "Security Rating Tool Template v2.xlsx",
+        "contentType": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+        "type": "attachment",
+        "url": "https://accenture.jiveon.com/servlet/JiveServlet/download/1090-1-1096/Security+Rating+Tool+Template+v2.xlsx",
+        "size": 72101
+    }],
 	content : {
 		text : "",
 		type : ""
@@ -163,7 +170,7 @@ function onDocFetch(response) {
 	
 	postDoc.type = group.type;
 	postDoc.tags = group.tags;
-    postDoc.attachments = group.attachments;
+    //postDoc.attachments = group.attachments;
 	postDoc.subject = group.subject;
 	postDoc.content = group.content;
 	postDoc.question = group.question;
