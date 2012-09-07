@@ -18,9 +18,9 @@
   });
 
 // Templates' IDs for the current AI instance
-var templateSpace = "/places/"; //actually, a SPACE
+var templateSpace = "places/2201 "; //actually, a SPACE
 var templateSpaceURI = "https://apps-public-cloud-trunk.jivesoftware.com/groups/deal-room-template-group";
-var templateProject = "/places/";
+var templateProject = "places/2294";
 var templateProjectURI = "https://apps-public-cloud-trunk.jivesoftware.com/groups/deal-room-template-group/projects/rfp-response-template";
 
 // Flag indicating we are in add mode
@@ -403,61 +403,61 @@ function onAttachmentFetch(response) {
 }
 
 //Loading Discussions
-//function loadDiscussions(source) {
-//osapi.jive.corev3.discussions.get ({
-  //      fields : '@all',
-	//place : source
-    //}).execute(onDiscFetch);
-//}
+function loadDiscussions(source) {
+osapi.jive.corev3.discussions.get ({
+      fields : '@all',
+       place : source
+    }).execute(onDiscFetch);
+}
 
 //Loading Documents
-//function loadDocuments(source) {
-//osapi.jive.corev3.documents.get ({
-  //      fields : '@all',
-	//place : source
-    //}).execute(onDocFetch);
-//}
+function loadDocuments(source) {
+osapi.jive.corev3.documents.get ({
+      fields : '@all',
+    place : source
+   }).execute(onDocFetch);
+}
 
 //Loading Project Discussions
-//function loadProjDiscussions(source) {
-//osapi.jive.corev3.discussions.get ({
-  //      fields : '@all',
-	//place : source
-    //}).execute(onProjDiscFetch);
-//}
+function loadProjDiscussions(source) {
+osapi.jive.corev3.discussions.get ({
+      fields : '@all',
+      place : source
+    }).execute(onProjDiscFetch);
+}
 
 //Loading Project Documents
-//function loadProjDocuments(source) {
-//osapi.jive.corev3.documents.get ({
-  //      fields : '@all',
-	//place : source
-    //}).execute(onProjDocFetch);
-//}
+function loadProjDocuments(source) {
+osapi.jive.corev3.documents.get ({
+        fields : '@all',
+	place : source
+    }).execute(onProjDocFetch);
+}
 
 
 //Loading Tasks
-//function loadTasks(source) {
-//osapi.jive.corev3.tasks.get({
-  //      fields : '@all',
-	//place : source
-    //}).execute(onTaskFetch);
-//}
+function loadTasks(source) {
+osapi.jive.corev3.tasks.get({
+      fields : '@all',
+     place : source
+    }).execute(onTaskFetch);
+}
 
 //Loading Files
-//function loadFiles(source) {
-//osapi.jive.corev3.statics.get({
-  //      fields : '@all',
-	//uri : source
-    //}).execute(onFileFetch);
-//}
+function loadFiles(source) {
+osapi.jive.corev3.statics.get({
+      fields : '@all',
+      uri : source
+    }).execute(onFileFetch);
+}
 
 //Loading Polls
-//function loadPolls(source) {
-//osapi.jive.corev3.polls.get({
-  //      fields : '@all',
-	//place : source
-    //}).execute(onPollFetch);
-//}
+function loadPolls(source) {
+osapi.jive.corev3.polls.get({
+      fields : '@all',
+     place : source
+    }).execute(onPollFetch);
+}
 
 //Loading Check Points
 function loadCheckPoints(source) {
