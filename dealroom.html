@@ -403,45 +403,45 @@ function onAttachmentFetch(response) {
 }
 
 //Loading Discussions
-function loadDiscussions(source) {
-osapi.jive.corev3.discussions.get ({
-        fields : '@all',
-	place : source
-    }).execute(onDiscFetch);
-}
+//function loadDiscussions(source) {
+//osapi.jive.corev3.discussions.get ({
+  //      fields : '@all',
+	//place : source
+    //}).execute(onDiscFetch);
+//}
 
 //Loading Documents
-function loadDocuments(source) {
-osapi.jive.corev3.documents.get ({
-        fields : '@all',
-	place : source
-    }).execute(onDocFetch);
-}
+//function loadDocuments(source) {
+//osapi.jive.corev3.documents.get ({
+  //      fields : '@all',
+	//place : source
+    //}).execute(onDocFetch);
+//}
 
 //Loading Project Discussions
-function loadProjDiscussions(source) {
-osapi.jive.corev3.discussions.get ({
-        fields : '@all',
-	place : source
-    }).execute(onProjDiscFetch);
-}
+//function loadProjDiscussions(source) {
+//osapi.jive.corev3.discussions.get ({
+  //      fields : '@all',
+	//place : source
+    //}).execute(onProjDiscFetch);
+//}
 
 //Loading Project Documents
-function loadProjDocuments(source) {
-osapi.jive.corev3.documents.get ({
-        fields : '@all',
-	place : source
-    }).execute(onProjDocFetch);
-}
+//function loadProjDocuments(source) {
+//osapi.jive.corev3.documents.get ({
+  //      fields : '@all',
+	//place : source
+    //}).execute(onProjDocFetch);
+//}
 
 
 //Loading Tasks
-function loadTasks(source) {
-osapi.jive.corev3.tasks.get({
-        fields : '@all',
-	place : source
-    }).execute(onTaskFetch);
-}
+//function loadTasks(source) {
+//osapi.jive.corev3.tasks.get({
+  //      fields : '@all',
+	//place : source
+    //}).execute(onTaskFetch);
+//}
 
 //Loading Files
 //function loadFiles(source) {
@@ -452,12 +452,12 @@ osapi.jive.corev3.tasks.get({
 //}
 
 //Loading Polls
-function loadPolls(source) {
-osapi.jive.corev3.polls.get({
-        fields : '@all',
-	place : source
-    }).execute(onPollFetch);
-}
+//function loadPolls(source) {
+//osapi.jive.corev3.polls.get({
+  //      fields : '@all',
+	//place : source
+    //}).execute(onPollFetch);
+//}
 
 //Loading Check Points
 function loadCheckPoints(source) {
@@ -496,8 +496,8 @@ function onProjectCreated(response) {
 	gMessage.innerHTML = gMessage.innerHTML + "<br />Click <a href=\""+response.resources.html.ref+"\">here</a> to visit the Project";
 	//loadTasks(templateProject);
 	//loadCheckPoints(templateProject);
-	loadProjDiscussions(templateProject);
-    loadProjDocuments(templateProject);
+	//loadProjDiscussions(templateProject);
+    //loadProjDocuments(templateProject);
 	}
 }
 
@@ -511,12 +511,12 @@ function onGroupCreated(response) {
 	}
 	
 	else {
-	//console.log("Group: "+JSON.stringify(response));
+	console.log("Group: "+JSON.stringify(response));
 	//mini.createDismissibleMessage("Group created at: " + response.resources.html.ref);
 	
 	// Setting the GLOBAL so as to use it for the content-load
 	targetGroupID = response.resources.self.ref;
-	//console.log("target group ID is:" +targetGroupID);
+	console.log("target group ID is:" +targetGroupID);
 	
 	var gMessage = document.getElementById("response-message");
 	gMessage.innerHTML = "Group successfully created. <br /> Click <a href=\""+response.resources.html.ref+"\">here</a> to visit the group";
