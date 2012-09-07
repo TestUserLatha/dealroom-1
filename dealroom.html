@@ -444,12 +444,12 @@ osapi.jive.corev3.tasks.get({
 }
 
 //Loading Files
-function loadFiles(source) {
-osapi.jive.corev3.statics.get({
-        fields : '@all',
-	uri : source
-    }).execute(onFileFetch);
-}
+//function loadFiles(source) {
+//osapi.jive.corev3.statics.get({
+  //      fields : '@all',
+	//uri : source
+    //}).execute(onFileFetch);
+//}
 
 //Loading Polls
 function loadPolls(source) {
@@ -465,21 +465,21 @@ osapi.jive.corev3.places.Project.getCheckpoints().execute(onCheckPointFetch);
 }
 
 //Loading Blogs
-function loadBlogs() {
-osapi.jive.corev3.blogs.get({
-        fields : '@all'//,
+//function loadBlogs() {
+//osapi.jive.corev3.blogs.get({
+  //      fields : '@all'//,
 	//place : source
-    }).execute(onBlogFetch);
+    //}).execute(onBlogFetch);
 }
 
 //Loading Attachments
-function loadAttachments(source) {
-osapi.jive.corev3.attachments.get({
-        fields : '@all',
-		attachmentID : '1096',
-	uri : source
-    }).execute(onAttachmentFetch);
-}
+//function loadAttachments(source) {
+//osapi.jive.corev3.attachments.get({
+  //      fields : '@all',
+	//	attachmentID : '1096',
+	//uri : source
+    //}).execute(onAttachmentFetch);
+//}
 
 // Defines what needs to be done once Project is created
 
